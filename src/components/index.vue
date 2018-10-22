@@ -16,7 +16,7 @@ export default {
     }
   },
   created () {
-    Axios.get('http://httpbin.org/get').then(function (response) {
+    Axios.post('http://testapi.novelspread.com/api/search/novel', { keywords: 'as', number: '2', fingerprint: '1232131233' }).then(function (response) {
       console.log(response)
     }).catch(function (error) {
       console.log(error)
