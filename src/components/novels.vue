@@ -1,5 +1,5 @@
 <template>
-  <p> foo </p>
+  <p> novels </p>
 </template>
 
 <script>

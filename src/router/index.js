@@ -1,22 +1,29 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import Foo from '@/components/foo'
+import IndexPage from '@/components/index'
+import Novels from '@/components/novels'
 import Bar from '@/components/bar'
+import GetUser from '@/components/getuser'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'index',
+      component: IndexPage
     },
     {
-      path: '/foo',
-      name: 'foo',
-      component: Foo
+      path: '/getuser',
+      name: 'getuser',
+      component: GetUser
+    },
+    {
+      path: '/novels',
+      name: 'novels',
+      component: Novels
     },
     {
       path: '/bar',
